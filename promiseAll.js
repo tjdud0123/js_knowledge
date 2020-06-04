@@ -1,6 +1,6 @@
 
 
-// 메인화면 스토리 리스트 불러오기
+// 0605 sql & 데이터 내려주기
 
 const query = `SELECT name, content, postIdx FROM ${postTable} INNER JOIN ${userTable} ON Post.User_userIdx = User.userIdx`;
     try {
@@ -55,7 +55,7 @@ const query = `SELECT name, content, postIdx FROM ${postTable} INNER JOIN ${user
             for (let element of result) {
                 element['imgUrl'] = await post.mainPostImg(element['postIdx'])
             }
-            
+
 
         } catch (err) {
             if (err.errno == 1062) {
