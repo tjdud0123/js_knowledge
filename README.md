@@ -4,4 +4,4 @@
 
 ✔️ async & await with map function ==> Promise.all 
 
-✔️ 알면 유용한 코드 정리
+✔️ 알면 유용한 코드 정리 - map/reduce/filter 이용
