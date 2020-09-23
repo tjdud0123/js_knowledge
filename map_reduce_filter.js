@@ -14,6 +14,11 @@ let res = users.filter(it => it.name.includes('oli'))
 /* 간단한 검색(case-insensitive) */
 let res = users.filter(it => new RegExp('oli', "i").test(it.name));
 
+
+/* 배열에서 객체 검색 find => 요소 자체 반환 */
+let userName = users.find(user => user.id === findId).name
+
+
 /* 특정 유저가 admin 권한을 갖고 있는지 확인 */
 let hasAdmin = users.some(user => user.group === 'admin');
 
