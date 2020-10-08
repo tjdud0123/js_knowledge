@@ -6,23 +6,24 @@ export default C;
 import C from '@commons/C';
 
 export default function getData() {
-  return { name:'seoYng', id:1111 }
+  return { index:'1', txt:'hi' }
 }
 
-export default function getData2() {
+export default function getUser() {
   return { name:'seoYng', id:1111 }
 }
 
 // app.js ( import할 파일 - js )
-import { getData, getData2 } from './data';
+import { getData, getUser } from './data';
 
 // component.vue ( import할 파일 - vue )
 <script>
-import { getData, getData2 } from './data';
+import { getData, getUser } from './data';
 export default {
   data() {
     return {
       data: getData(),
-      data2: getData2()
+      name: getUser().name,
+      id: getUser().id
   }
 </script>
