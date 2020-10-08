@@ -13,3 +13,5 @@
 ❕ 원하는 요소로 스크롤 - scrollIntoview()
 
 ❕ module import / export
+
+❕ 객체 디스트럭처링
