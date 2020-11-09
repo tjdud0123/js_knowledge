@@ -15,3 +15,6 @@
 ❕ module import / export
 
 ❕ 객체 디스트럭처링
+
+## 콘솔창 에러 메시지 안 뜨게 하기
+console.warn = console.error = () => {};
