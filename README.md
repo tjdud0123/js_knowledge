@@ -18,3 +18,6 @@
 
 ### 콘솔창 에러 메시지 안 뜨게 하기
 console.warn = console.error = () => {};
+
+### 자주쓰는 메소드 정리
+frequently.js
