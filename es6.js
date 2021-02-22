@@ -53,3 +53,20 @@ console.log(pow(10)); // 100
 // ES6
 const pow = x => x * x;
 console.log(pow(10)); // 100
+           
+//---------------------------------------------------------------------------
+           
+// ES5
+var obj = { name: name, age: age, email: email };  // 기존 표기법
+
+// ES6
+let obj = { name, age, email }; // 속성명과 변수명이 같을 경우
+let obj = {
+
+    func: function(param) {  // ES5
+        ...
+    },
+    func(param) { // ES6 
+        ...
+    }
+}
