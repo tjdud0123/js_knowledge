@@ -21,3 +21,7 @@ console.warn = console.error = () => {};
 
 ### 자주쓰는 메소드 정리
 frequently.js
+
+#### memo
+map보다 forEach가 빠름
+[참고](https://pewww.tistory.com/12)
