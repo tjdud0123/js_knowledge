@@ -6,10 +6,16 @@ console.warn = console.error = () => {};
 
 /* 구조분해 실험 */
 const obj = {a:1, b:2, c:3}
+const result = undefined
+const result2 = null
 
 const {a, c, d} = obj
-
 console.log(a, c, d); // 속성없으면 undefined
+
+const {a, c, d} = result
+const {a, c, d} = result2
+
+console.log(a, c, d); // 에러
 
 // undefined는 falsy한 값
 if(d) { 
@@ -25,3 +31,5 @@ console.log(d<arr.length) // 오잉 연산이 되네
 console.log(undefined < -1) // 오잉 연산이 되네
 
 console.log(arr[0]) // index 범위밖 : undefined
+
+/* */
