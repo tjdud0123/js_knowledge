@@ -32,4 +32,9 @@ console.log(undefined < -1) // 오잉 연산이 되네
 
 console.log(arr[0]) // index 범위밖 : undefined
 
-/* */
+/* 없는 속성 접근 시*/
+const obj = { a: 1, b: 2 }
+
+if(!obj['c']) { //error는 안남
+ console.log('not exist key')
+}
