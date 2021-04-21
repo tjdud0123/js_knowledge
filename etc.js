@@ -16,7 +16,9 @@ const {a, c, d} = result
 const {a, c, d} = result2
 
 console.log(a, c, d); // 에러
-
+// --> 아래와 같이 객체 형태로 변환해야함
+const { message, isChecked } = (undefined || {})
+  
 // undefined는 falsy한 값
 if(d) { 
   console.log('hi') // 실행 안됨
