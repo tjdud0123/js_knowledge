@@ -1,0 +1,21 @@
+// in backbone.View
+var objList = [{img: 1}, {img: 2}, {img:3}];
+var noImgUrl = 'https//www.img.com';
+
+$el.html(this.handlebarTemplate({
+  objList: this.objList,
+  noImgUrl: this.noImgUrl,
+}));
+
+// 한 depth 상위 데이터 접근 ../
+{{#each objList}}
+		<li>
+				<span class="img_wrap">
+				{{#if img}}
+					<img src="{{ img }}" alt="">
+				{{else}}
+					<img src="{{ ../noImgUrl }}" alt="">
+				{{/if}}
+				</span>
+		</li>
+{{/each}}
