@@ -40,3 +40,10 @@ const obj = { a: 1, b: 2 }
 if(!obj['c']) { //error는 안남
  console.log('not exist key')
 }
+
+/* split 및 arr 인덱스 에러 확인 */
+const str = ''
+const arr = []
+console.log(str.split('?')[2]) //undefined => 인덱스에러 안남
+console.log(str.split('?')) // [ '' ] => 빈 스트링 한 개 생성
+console.log(arr[3]) //undefined => 인덱스에러 안남
